@@ -1,4 +1,3 @@
-import { AsyncPipe, DecimalPipe, NgFor, NgIf } from '@angular/common';
 import { Component, QueryList, ViewChildren } from '@angular/core';
 import { Observable } from 'rxjs';
 
@@ -8,11 +7,6 @@ import {
   NgbdSortableHeader,
   SortEvent,
 } from '../../_default/COMPLETE/sortable.directive';
-import { FormsModule } from '@angular/forms';
-import {
-  NgbPaginationModule,
-  NgbTypeaheadModule,
-} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-table',

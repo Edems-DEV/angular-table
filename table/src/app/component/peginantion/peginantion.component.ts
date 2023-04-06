@@ -17,3 +17,6 @@ export class PeginantionComponent {
     this.total$ = service.total$;
   }
 }
+
+//1.service interface (passess specific service by model)
+//2.model interface (passess specific service by model)
