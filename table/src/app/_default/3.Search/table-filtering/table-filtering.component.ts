@@ -53,8 +53,16 @@ function search(text: string, pipe: PipeTransform): Country[] {
 
 @Component({
   selector: 'app-table-filtering',
+  standalone: true,
+  imports: [
+    DecimalPipe,
+    NgFor,
+    AsyncPipe,
+    ReactiveFormsModule,
+    NgbTypeaheadModule,
+  ],
   templateUrl: './table-filtering.component.html',
-  styleUrls: ['./table-filtering.component.scss'],
+  providers: [DecimalPipe],
 })
 export class TableFilteringComponent {
   countries$: Observable<Country[]>;

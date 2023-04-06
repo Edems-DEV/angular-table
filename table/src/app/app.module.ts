@@ -22,13 +22,19 @@ import { NgbdSortableHeader } from './_default/COMPLETE/sortable.directive';
     TableComponent,
     TableBasicComponent,
     TableSortableComponent,
-    TableFilteringComponent,
+    //TableFilteringComponent,
     TablePeginationComponent,
     TableCompleteComponent,
     NgbdSortableHeader,
   ],
-  imports: [BrowserModule, NgbModule, FormsModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
+  imports: [
+    BrowserModule,
+    NgbModule,
+    FormsModule,
+    ReactiveFormsModule,
+    TableFilteringComponent,
+  ],
 })
 export class AppModule {}
