@@ -13,6 +13,7 @@ import { TableFilteringComponent } from './_default/3.Search/table-filtering/tab
 import { TablePeginationComponent } from './_default/4.Pegination/table-pegination/table-pegination.component';
 import { TableCompleteComponent } from './_default/COMPLETE/table-complete/table-complete.component';
 import { NgbdSortableHeader } from './_default/COMPLETE/sortable.directive';
+import { DecimalPipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { NgbdSortableHeader } from './_default/COMPLETE/sortable.directive';
     TableCompleteComponent,
     NgbdSortableHeader,
   ],
-  providers: [],
+  providers: [DecimalPipe],
   bootstrap: [AppComponent],
   imports: [
     BrowserModule,
