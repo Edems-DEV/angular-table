@@ -12,8 +12,7 @@ import { TableSortableComponent } from './_default/2.Sortable/table-sortable/tab
 import { TableFilteringComponent } from './_default/3.Search/table-filtering/table-filtering.component';
 import { TablePeginationComponent } from './_default/4.Pegination/table-pegination/table-pegination.component';
 import { TableCompleteComponent } from './_default/COMPLETE/table-complete/table-complete.component';
-import { SortableDirective } from './_default/COMPLETE/sortable.directive';
-import { NgbdSortableHeaderDirective } from './_default/COMPLETE/ngbd-sortable-header.directive';
+import { NgbdSortableHeader } from './_default/COMPLETE/sortable.directive';
 
 @NgModule({
   declarations: [
@@ -26,8 +25,7 @@ import { NgbdSortableHeaderDirective } from './_default/COMPLETE/ngbd-sortable-h
     TableFilteringComponent,
     TablePeginationComponent,
     TableCompleteComponent,
-    SortableDirective,
-    NgbdSortableHeaderDirective,
+    NgbdSortableHeader,
   ],
   imports: [BrowserModule, NgbModule, FormsModule, ReactiveFormsModule],
   providers: [],
