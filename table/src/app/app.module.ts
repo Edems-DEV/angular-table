@@ -14,7 +14,17 @@ import { TablePeginationComponent } from './_default/4.Pegination/table-peginati
 import { TableCompleteComponent } from './_default/COMPLETE/table-complete/table-complete.component';
 
 @NgModule({
-  declarations: [AppComponent, InputComponent, ParentComponent, TableComponent, TableBasicComponent, TableSortableComponent, TableFilteringComponent, TablePeginationComponent, TableCompleteComponent],
+  declarations: [
+    AppComponent,
+    InputComponent,
+    ParentComponent,
+    TableComponent,
+    TableBasicComponent,
+    TableSortableComponent,
+    TableFilteringComponent,
+    TablePeginationComponent,
+    TableCompleteComponent,
+  ],
   imports: [BrowserModule, NgbModule, FormsModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
