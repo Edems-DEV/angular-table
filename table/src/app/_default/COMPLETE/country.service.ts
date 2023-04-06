@@ -40,6 +40,7 @@ function sort(
   }
 }
 
+//each model has a different set of properties
 function matches(country: Country, term: string, pipe: PipeTransform) {
   return (
     country.name.toLowerCase().includes(term.toLowerCase()) ||
@@ -128,8 +129,9 @@ export class CountryService {
     let countries = sort(COUNTRIES, sortColumn, sortDirection);
 
     // 2. filter
-    countries = countries.filter((country) =>
-      matches(country, searchTerm, this.pipe)
+    countries = countries.filter(
+      (country) => matches(country, searchTerm, this.pipe)
+      //use of matches => import specific model
     );
     const total = countries.length;
 
@@ -141,3 +143,6 @@ export class CountryService {
     return of({ countries, total });
   }
 }
+
+// 1. import model specific matches (each model has a different set of properties)
+// 2. generic model

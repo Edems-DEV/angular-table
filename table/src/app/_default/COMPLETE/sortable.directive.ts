@@ -33,3 +33,5 @@ export class NgbdSortableHeader {
     this.sort.emit({ column: this.sortable, direction: this.direction });
   }
 }
+
+//just make country generic model?
