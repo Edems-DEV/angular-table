@@ -14,6 +14,7 @@ import { TablePeginationComponent } from './_default/4.Pegination/table-peginati
 import { TableCompleteComponent } from './_default/COMPLETE/table-complete/table-complete.component';
 import { NgbdSortableHeader } from './_default/COMPLETE/sortable.directive';
 import { DecimalPipe } from '@angular/common';
+import { PeginantionComponent } from './component/peginantion/peginantion.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { DecimalPipe } from '@angular/common';
     TablePeginationComponent,
     TableCompleteComponent,
     NgbdSortableHeader,
+    PeginantionComponent,
   ],
   providers: [DecimalPipe],
   bootstrap: [AppComponent],
