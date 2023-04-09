@@ -3,10 +3,14 @@ import { Observable } from 'rxjs';
 
 import { Country } from '../../_default/COMPLETE/country';
 import { CountryService } from '../../_default/COMPLETE/country.service';
+
+import { User } from 'src/app/models/user';
+import { UsersService } from 'src/app/service/users.service';
+
 import {
   NgbdSortableHeader,
   SortEvent,
-} from '../../_default/COMPLETE/sortable.directive';
+} from 'src/app/service/sortable.directive';
 
 @Component({
   selector: 'app-table',
@@ -14,14 +18,14 @@ import {
   styleUrls: ['./table.component.scss'],
 })
 export class TableComponent {
-  countries$: Observable<Country[]>;
+  items$: Observable<User[]>;
   total$: Observable<number>;
 
   @ViewChildren(NgbdSortableHeader)
   headers!: QueryList<NgbdSortableHeader>;
 
-  constructor(public service: CountryService) {
-    this.countries$ = service.countries$;
+  constructor(public service: UsersService) {
+    this.items$ = service.countries$;
     this.total$ = service.total$;
   }
 
