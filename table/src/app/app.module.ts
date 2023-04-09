@@ -15,7 +15,6 @@ import { TableCompleteComponent } from './_default/COMPLETE/table-complete/table
 import { NgbdSortableHeader } from './_default/COMPLETE/sortable.directive';
 import { DecimalPipe } from '@angular/common';
 import { PeginantionComponent } from './component/peginantion/peginantion.component';
-import { SortableDirective } from './service/sortable.directive';
 
 @NgModule({
   declarations: [
@@ -30,7 +29,6 @@ import { SortableDirective } from './service/sortable.directive';
     TableCompleteComponent,
     NgbdSortableHeader,
     PeginantionComponent,
-    SortableDirective,
   ],
   providers: [DecimalPipe],
   bootstrap: [AppComponent],
